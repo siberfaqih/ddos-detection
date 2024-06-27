@@ -9,7 +9,7 @@ def authenticated_menu():
         st.sidebar.page_link("pages/admin.py", label="Manage Blocked IPs")
         st.sidebar.page_link(
             "pages/super-admin.py",
-            label="Manage admin access",
+            label="Manage users",
             disabled=st.session_state.user['role'] != "super-admin",
         )
     st.sidebar.page_link("pages/logout.py", label="Log out")
